@@ -27,7 +27,7 @@ engine:                                   # Engine settings.
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
     lichess_cloud:
       enabled: true                       # Activate online moves from Lichess cloud eval.
-      min_eval_depth: 10                  # Minimum evaluation depth.
+      min_eval_depth: 20                  # Minimum evaluation depth.
       min_time: 1                         # Time the bot must have at least to use the online move.
       timeout: 1                          # Time the server has to respond.
       max_depth: 100                      # Half move max depth. (Comment this line for max depth)
