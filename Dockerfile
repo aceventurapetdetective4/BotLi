@@ -14,5 +14,4 @@ RUN 7zr e cubail.7z && rm cubail.7z
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
 # Add the "--matchmaking" flag to start the matchmaking mode.
-RUN mv stockfish_* engines/stockfish && chmod +x engines/stockfish
 CMD python3 user_interface.py --non_interactive
