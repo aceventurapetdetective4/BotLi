@@ -51,7 +51,7 @@ engine:                                   # Engine settings.
     Move Overhead: 1000                   # Increase if your bot flags games too often.
     Ponder: true
     Threads: 20                           # Max CPU threads the engine can use.
-    Hash: 512                             # Max memory (in megabytes) the engine can allocate.
+    Hash: 16                             # Max memory (in megabytes) the engine can allocate.
     Skill Level: 20
 #   SyzygyPath: "./3-4-5"         # Path to your local syzygy endgame tablebases
 
