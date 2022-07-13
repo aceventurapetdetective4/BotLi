@@ -9,13 +9,10 @@ engine:                                   # Engine settings.
     books:
       white:                              # List of names of books to use as white.
         - "cubail"
-        - "Goi5.1"
       black:                              # List of names of books to use as black.
-        - "cubail"
-        - "Goi5.1"     
+        - "cubail"  
       standard:                           # List of names of books to use if there is no specific book for white, black or chess960.   
         - "cubail"
-        - "Goi5.1"
 #     chess960:                           # List of names of books to use for Chess960.
 #       - "Chess960Book"
     selection: "best_move"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
@@ -29,8 +26,8 @@ engine:                                   # Engine settings.
       selection: "best"                   # Move selection is one of "best", "good" or "all".
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
     lichess_cloud:
-      enabled: false                       # Activate online moves from Lichess cloud eval.
-      min_eval_depth: 20                   # Minimum evaluation depth.
+      enabled: true                        # Activate online moves from Lichess cloud eval.
+      min_eval_depth: 50                   # Minimum evaluation depth.
       min_time: 20                         # Time the bot must have at least to use the online move.
       timeout: 1                           # Time the server has to respond.
       max_depth: 100                      # Half move max depth. (Comment this line for max depth)
@@ -55,7 +52,7 @@ engine:                                   # Engine settings.
     Skill Level: 20
 #   SyzygyPath: "./3-4-5"         # Path to your local syzygy endgame tablebases
 
-move_overhead_multiplier: 2.1             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
+move_overhead_multiplier: 2.0             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
     
 challenge:                                # Incoming challenges. (Commenting allowed)
   concurrency: 1                          # Number of games to play simultaneously.
@@ -99,4 +96,3 @@ matchmaking:
 
 books:                                    # Names of the opening books (to be used above in the opening_books section) and paths to the opening books.
   cubail: "cubail.bin"
-  Goi5.1: "Goi5.1.bin"
