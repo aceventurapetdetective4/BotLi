@@ -4,7 +4,7 @@ COPY . .
 RUN apt-get update && apt-get upgrade -y && apt-get install -y wget unzip python3 python3-pip p7zip
 
 RUN mv config.yml.default config.yml
-RUN wget https://abrok.eu/stockfish/latest/linux/stockfish_x64_avx2.zip -O stockfish.zip
+RUN wget https://abrok.eu/stockfish/latest/linux/stockfish_x64_bmi2.zip -O stockfish.zip
 RUN unzip stockfish.zip && rm stockfish.zip
 RUN mv stockfish_* engines/stockfish && chmod +x engines/stockfish
 
