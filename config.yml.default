@@ -10,15 +10,12 @@ engine:                                   # Engine settings.
       white:                              # List of names of books to use as white.
         - "cubail"
         - "Goi5.1"
-        - "CaissaX"
       black:                              # List of names of books to use as black.
         - "cubail"
-        - "Goi5.1"
-        - "CaissaX"     
-      standard:                           # List of names of books to use if there is no specific book for white, black or chess960.
-        - "CaissaX"
-        - "Goi5.1"
+        - "Goi5.1"     
+      standard:                           # List of names of books to use if there is no specific book for white, black or chess960.   
         - "cubail"
+        - "Goi5.1"
 #     chess960:                           # List of names of books to use for Chess960.
 #       - "Chess960Book"
     selection: "best_move"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
@@ -56,7 +53,7 @@ engine:                                   # Engine settings.
     Threads: 20                           # Max CPU threads the engine can use.
     Hash: 16                             # Max memory (in megabytes) the engine can allocate.
     Skill Level: 20
-    SyzygyPath: "./3-4-5"         # Path to your local syzygy endgame tablebases
+#   SyzygyPath: "./3-4-5"         # Path to your local syzygy endgame tablebases
 
 move_overhead_multiplier: 2.0             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
     
@@ -101,6 +98,5 @@ matchmaking:
   delay: 10                               # Time in seconds the bot must be idle before a new challenge is started.
 
 books:                                    # Names of the opening books (to be used above in the opening_books section) and paths to the opening books.
-  CaissaX: "engines/CaissaX.bin"
   cubail: "cubail.bin"
   Goi5.1: "Goi5.1.bin"
