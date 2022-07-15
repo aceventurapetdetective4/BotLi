@@ -14,9 +14,8 @@ engine:                                   # Engine settings.
       standard:                           # List of names of books to use if there is no specific book for white, black or chess960.   
         - "cubail"
       chess960:                           # List of names of books to use for Chess960.
-        - "CaissaX"
-        - "RickRoll"
         - "Maverick"
+        - "RickRoll"
     selection: "best_move"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
     max_depth: 500                        # Half move max depth. (Comment this line for max depth)
   online_moves:
@@ -98,6 +97,5 @@ matchmaking:
 
 books:                                    # Names of the opening books (to be used above in the opening_books section) and paths to the opening books.
   cubail: "cubail.bin"
-  CaissaX: "engines/CaissaX.bin"
   RickRoll: "engines/RickRoll.bin"
   Maverick: "engines/Maverick.bin"
