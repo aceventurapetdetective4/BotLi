@@ -11,13 +11,13 @@ engine:                                   # Engine settings.
         - "cubail"
 #     black:                              # List of names of books to use as black.
 #       - "cubail"
-      standard:                           # List of names of books to use if there is no specific book for white, black or chess960.   
-        - "cubail"
+#     standard:                           # List of names of books to use if there is no specific book for white, black or chess960.   
+#       - "cubail"
       chess960:                           # List of names of books to use for Chess960.
         - "Maverick"
         - "RickRoll"
     selection: "best_move"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
-    max_depth: 500                        # Half move max depth. (Comment this line for max depth)
+#   max_depth: 500                        # Half move max depth. (Comment this line for max depth)
   online_moves:
     chessdb:
       enabled: false                      # Activate online moves from https://chessdb.cn/queryc_en/
