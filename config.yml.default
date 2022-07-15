@@ -31,7 +31,7 @@ engine:                                   # Engine settings.
       min_eval_depth: 50                   # Minimum evaluation depth.
       min_time: 50                         # Time the bot must have at least to use the online move.
       timeout: 5                           # Time the server has to respond.
-      max_depth: 100                       # Half move max depth. (Comment this line for max depth)
+#     max_depth: 100                       # Half move max depth. (Comment this line for max depth)
     online_egtb:
       enabled: true                       # Activate online endgame tablebases from Lichess.
       min_time: 10                        # Time the bot must have at least to use the online move.
@@ -48,7 +48,7 @@ engine:                                   # Engine settings.
   uci_options:                            # Arbitrary UCI options passed to the engine. (Commenting allowed)
     Move Overhead: 500                    # Increase if your bot flags games too often.
     Ponder: true
-    Threads: 5                           # Max CPU threads the engine can use.
+    Threads: 8                           # Max CPU threads the engine can use.
     Hash: 256                             # Max memory (in megabytes) the engine can allocate.
     Skill Level: 20
 #   SyzygyPath: "./3-4-5"         # Path to your local syzygy endgame tablebases
