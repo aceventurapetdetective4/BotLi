@@ -30,7 +30,7 @@ engine:                                   # Engine settings.
       enabled: true                        # Activate online moves from Lichess cloud eval.
       min_eval_depth: 50                   # Minimum evaluation depth.
       min_time: 50                         # Time the bot must have at least to use the online move.
-      timeout: 1                           # Time the server has to respond.
+      timeout: 5                           # Time the server has to respond.
       max_depth: 100                       # Half move max depth. (Comment this line for max depth)
     online_egtb:
       enabled: true                       # Activate online endgame tablebases from Lichess.
