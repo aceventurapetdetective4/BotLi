@@ -9,8 +9,8 @@ engine:                                   # Engine settings.
     books:
       white:                              # List of names of books to use as white.
         - "cubail"
-      black:                              # List of names of books to use as black.
-        - "cubail"
+#     black:                              # List of names of books to use as black.
+#       - "cubail"
       standard:                           # List of names of books to use if there is no specific book for white, black or chess960.   
         - "cubail"
       chess960:                           # List of names of books to use for Chess960.
@@ -29,7 +29,7 @@ engine:                                   # Engine settings.
     lichess_cloud:
       enabled: true                        # Activate online moves from Lichess cloud eval.
       min_eval_depth: 50                   # Minimum evaluation depth.
-      min_time: 10                         # Time the bot must have at least to use the online move.
+      min_time: 50                         # Time the bot must have at least to use the online move.
       timeout: 1                           # Time the server has to respond.
       max_depth: 100                       # Half move max depth. (Comment this line for max depth)
     online_egtb:
