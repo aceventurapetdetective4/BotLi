@@ -10,11 +10,13 @@ engine:                                   # Engine settings.
       white:                              # List of names of books to use as white.
         - "cubail"
       black:                              # List of names of books to use as black.
-        - "cubail"  
+        - "cubail"
       standard:                           # List of names of books to use if there is no specific book for white, black or chess960.   
         - "cubail"
-#     chess960:                           # List of names of books to use for Chess960.
-#       - "Chess960Book"
+      chess960:                           # List of names of books to use for Chess960.
+        - "CaissaX"
+        - "RickRoll"
+        - "Maverick"
     selection: "best_move"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
     max_depth: 500                        # Half move max depth. (Comment this line for max depth)
   online_moves:
