@@ -1,3 +1,4 @@
+
 token: "XXXXXXXXXXXXXXXXXXXXXXXX"         # Lichess OAuth2 Token.
 
 engine:                                   # Engine settings.
@@ -5,19 +6,18 @@ engine:                                   # Engine settings.
   name: "stockfish"                       # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   opening_books:
-    enabled: false                         # Activate opening books.
+    enabled: false                        # Activate opening books.
     books:
 #     white:                              # List of names of books to use as white.
-#       - "cubail"
+#       - "WhiteBook"
 #     black:                              # List of names of books to use as black.
-#       - "cubail"
-      standard:                           # List of names of books to use if there is no specific book for white, black or chess960.   
-        - "DefaultBook"
-#      chess960:                           # List of names of books to use for Chess960.
-#       - "Maverick"
-#       - "RickRoll"
-    selection: "best_move"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
-#    max_depth: 4                        # Half move max depth. (Comment this line for max depth)
+#       - "BlackBook"
+      standard:                           # List of names of books to use if there is no specific book for white, black or chess960.
+        - "DefaultBook" 
+#     chess960:                           # List of names of books to use for Chess960.
+#       - "Chess960Book"
+    selection: "weighted_random"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
+#   max_depth: 16                         # Half move max depth. (Comment this line for max depth)
   online_moves:
     chessdb:
       enabled: false                      # Activate online moves from https://chessdb.cn/queryc_en/
@@ -95,5 +95,15 @@ matchmaking:
 # max_rating_diff: 300                    # Maximum rating distance to opponent. (Commenting allowed)
   delay: 10                               # Time in seconds the bot must be idle before a new challenge is started.
 
+matchmaking:
+  initial_time: 60                        # Initial time for matchmaking mode.
+  increment: 1                            # Increment time for matchmaking mode.
+  rated: true                             # Activate rated games in matchmaking mode.
+  timeout: 30                             # Time until a challenge is canceled.
+  variant: standard                       # Chess variant (https://lichess.org/variant) to challenge.
+# min_rating_diff: 0                      # Minimum rating distance to opponent. (Commenting allowed)
+# max_rating_diff: 300                    # Maximum rating distance to opponent. (Commenting allowed)
+  delay: 10                               # Time in seconds the bot must be idle before a new challenge is started.
+
 books:                                    # Names of the opening books (to be used above in the opening_books section) and paths to the opening books.
-# Maverick: "engines/Maverick.bin"
+  DefaultBook: "/path/to/DefaultBook.bin"
