@@ -12,7 +12,7 @@ engine:                                   # Engine settings.
 #     black:                              # List of names of books to use as black.
 #       - "cubail"
       standard:                           # List of names of books to use if there is no specific book for white, black or chess960.   
-#       - "cubail"
+        - "DefaultBook"
 #      chess960:                           # List of names of books to use for Chess960.
 #       - "Maverick"
 #       - "RickRoll"
@@ -96,6 +96,4 @@ matchmaking:
   delay: 10                               # Time in seconds the bot must be idle before a new challenge is started.
 
 books:                                    # Names of the opening books (to be used above in the opening_books section) and paths to the opening books.
- # cubail: "cubail.bin"
- # RickRoll: "engines/RickRoll.bin"
- # Maverick: "engines/Maverick.bin"
+# Maverick: "engines/Maverick.bin"
