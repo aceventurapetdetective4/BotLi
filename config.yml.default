@@ -7,11 +7,11 @@ engine:                                   # Engine settings.
   opening_books:
     enabled: false                         # Activate opening books.
     books:
-      white:                              # List of names of books to use as white.
-        - "cubail"
+#     white:                              # List of names of books to use as white.
+#       - "cubail"
 #     black:                              # List of names of books to use as black.
 #       - "cubail"
-#     standard:                           # List of names of books to use if there is no specific book for white, black or chess960.   
+      standard:                           # List of names of books to use if there is no specific book for white, black or chess960.   
 #       - "cubail"
 #      chess960:                           # List of names of books to use for Chess960.
 #       - "Maverick"
