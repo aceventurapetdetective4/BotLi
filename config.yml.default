@@ -27,11 +27,11 @@ engine:                                   # Engine settings.
       selection: "best"                   # Move selection is one of "best", "good" or "all".
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
     lichess_cloud:
-      enabled: true                        # Activate online moves from Lichess cloud eval.
-      min_eval_depth: 50                   # Minimum evaluation depth.
-      min_time: 100                        # Time the bot must have at least to use the online move.
-      timeout: 5                           # Time the server has to respond.
-#     max_depth: 100                       # Half move max depth. (Comment this line for max depth)
+      enabled: true                       # Activate online moves from Lichess cloud eval.
+      min_eval_depth: 50                  # Minimum evaluation depth.
+      min_time: 40                        # Time the bot must have at least to use the online move.
+      timeout: 5                          # Time the server has to respond.
+#     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
     online_egtb:
       enabled: true                       # Activate online endgame tablebases from Lichess.
       min_time: 10                        # Time the bot must have at least to use the online move.
@@ -40,7 +40,7 @@ engine:                                   # Engine settings.
     enabled: true                         # Activate whether the bot should offer draw.
     score: 0                              # If the absolute value of the score is less than or equal to this value, the bot offers/accepts draw (in cp)
     consecutive_moves: 10                 # How many moves in a row the absolute value of the score has to be below the draw value
-    min_game_length: 95                   # Earliest move in which draw is offered.
+    min_game_length: 50                   # Earliest move in which draw is offered.
   resign:
     enabled: true                         # Activate whether the bot should resign games.
     score: -1000                          # If the score is less than or equal to this value, the bot resigns (in cp).
@@ -53,7 +53,7 @@ engine:                                   # Engine settings.
     Skill Level: 20
 #   SyzygyPath: "./3-4-5"         # Path to your local syzygy endgame tablebases
 
-move_overhead_multiplier: 1.6             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
+move_overhead_multiplier: 1.5             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
     
 challenge:                                # Incoming challenges. (Commenting allowed)
   concurrency: 1                          # Number of games to play simultaneously.
