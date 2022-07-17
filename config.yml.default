@@ -6,18 +6,18 @@ engine:                                   # Engine settings.
   name: "stockfish"                       # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   opening_books:
-    enabled: false                        # Activate opening books.
+    enabled: true                         # Activate opening books.
     books:
-#     white:                              # List of names of books to use as white.
-#       - "WhiteBook"
-#     black:                              # List of names of books to use as black.
-#       - "BlackBook"
+      white:                              # List of names of books to use as white.
+        - "cubail"
+      black:                              # List of names of books to use as black.
+        - "cubail"
       standard:                           # List of names of books to use if there is no specific book for white, black or chess960.
-        - "DefaultBook" 
+        - "cubail" 
 #     chess960:                           # List of names of books to use for Chess960.
 #       - "Chess960Book"
-    selection: "weighted_random"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
-#   max_depth: 16                         # Half move max depth. (Comment this line for max depth)
+    selection: "best_move"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
+    max_depth: 10                         # Half move max depth. (Comment this line for max depth)
   online_moves:
     chessdb:
       enabled: false                      # Activate online moves from https://chessdb.cn/queryc_en/
@@ -29,7 +29,7 @@ engine:                                   # Engine settings.
     lichess_cloud:
       enabled: true                       # Activate online moves from Lichess cloud eval.
       min_eval_depth: 50                  # Minimum evaluation depth.
-      min_time: 40                        # Time the bot must have at least to use the online move.
+      min_time: 10                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
     online_egtb:
@@ -46,9 +46,9 @@ engine:                                   # Engine settings.
     score: -1000                          # If the score is less than or equal to this value, the bot resigns (in cp).
     consecutive_moves: 5                  # How many moves in a row the score has to be below the resign value.
   uci_options:                            # Arbitrary UCI options passed to the engine. (Commenting allowed)
-    Move Overhead: 150                    # Increase if your bot flags games too often.
+    Move Overhead: 100                    # Increase if your bot flags games too often.
     Ponder: true
-    Threads: 5                            # Max CPU threads the engine can use.
+    Threads: 4                            # Max CPU threads the engine can use.
     Hash: 256                             # Max memory (in megabytes) the engine can allocate.
     Skill Level: 20
 #   SyzygyPath: "./3-4-5"         # Path to your local syzygy endgame tablebases
@@ -106,4 +106,4 @@ matchmaking:
   delay: 10                               # Time in seconds the bot must be idle before a new challenge is started.
 
 books:                                    # Names of the opening books (to be used above in the opening_books section) and paths to the opening books.
-  DefaultBook: "/path/to/DefaultBook.bin"
+  cubail: "cubail.bin"
