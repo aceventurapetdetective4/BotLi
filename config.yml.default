@@ -1,4 +1,3 @@
-
 token: "XXXXXXXXXXXXXXXXXXXXXXXX"         # Lichess OAuth2 Token.
 
 engine:                                   # Engine settings.
