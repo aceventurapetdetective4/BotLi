@@ -12,7 +12,6 @@ engine:                                   # Engine settings.
         - "cubail"
       black:                              # List of names of books to use as black.
         - "sf"
-        - "cubail"
       standard:                           # List of names of books to use if there is no specific book for white, black or chess960.
         - "sf" 
         - "cubail"
