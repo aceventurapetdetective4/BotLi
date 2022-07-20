@@ -9,8 +9,8 @@ engine:                                   # Engine settings.
     books:
       white:                              # List of names of books to use as white.
         - "cubail"
-      black:                              # List of names of books to use as black.
-        - "cubail"
+#     black:                              # List of names of books to use as black.
+#       - "cubail"
       standard:                           # List of names of books to use if there is no specific book for white, black or chess960.
         - "cubail" 
 #     chess960:                           # List of names of books to use for Chess960.
@@ -47,7 +47,7 @@ engine:                                   # Engine settings.
   uci_options:                            # Arbitrary UCI options passed to the engine. (Commenting allowed)
     Move Overhead: 100                    # Increase if your bot flags games too often.
     Ponder: true
-    Threads: 12                           # Max CPU threads the engine can use.
+    Threads: 16                           # Max CPU threads the engine can use.
     Hash: 256                             # Max memory (in megabytes) the engine can allocate.
     Skill Level: 20
     Slow Mover: 70 
