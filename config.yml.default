@@ -27,7 +27,7 @@ engine:                                   # Engine settings.
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
     lichess_cloud:
       enabled: true                       # Activate online moves from Lichess cloud eval.
-      min_eval_depth: 60                  # Minimum evaluation depth.
+      min_eval_depth: 53                  # Minimum evaluation depth.
       min_time: 10                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
       max_depth: 16                       # Half move max depth. (Comment this line for max depth)
@@ -47,7 +47,7 @@ engine:                                   # Engine settings.
   uci_options:                            # Arbitrary UCI options passed to the engine. (Commenting allowed)
     Move Overhead: 100                    # Increase if your bot flags games too often.
     Ponder: true
-    Threads: 8                            # Max CPU threads the engine can use.
+    Threads: 12                           # Max CPU threads the engine can use.
     Hash: 256                             # Max memory (in megabytes) the engine can allocate.
     Skill Level: 20
     Slow Mover: 70 
