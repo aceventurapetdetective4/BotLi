@@ -50,7 +50,7 @@ engine:                                   # Engine settings.
   uci_options:                            # Arbitrary UCI options passed to the engine. (Commenting allowed)
     Move Overhead: 100                    # Increase if your bot flags games too often.
     Ponder: true
-    Threads: 12                           # Max CPU threads the engine can use.
+    Threads: 8                            # Max CPU threads the engine can use.
     Hash: 256                             # Max memory (in megabytes) the engine can allocate.
     Skill Level: 20
     Use NNUE: true
