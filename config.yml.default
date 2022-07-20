@@ -5,7 +5,7 @@ engine:                                   # Engine settings.
   name: "stockfish"                       # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   opening_books:
-    enabled: false                        # Activate opening books.
+    enabled: true                         # Activate opening books.
     books:
       white:                              # List of names of books to use as white.
         - "cubail"
@@ -96,4 +96,4 @@ matchmaking:
   delay: 10                               # Time in seconds the bot must be idle before a new challenge is started.
 
 books:                                    # Names of the opening books (to be used above in the opening_books section) and paths to the opening books.
-  cubail: "cubail.bin"
+  cubail: "engines/cubail.bin"
