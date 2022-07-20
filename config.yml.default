@@ -5,7 +5,7 @@ engine:                                   # Engine settings.
   name: "stockfish"                       # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   opening_books:
-    enabled: true                         # Activate opening books.
+    enabled: false                        # Activate opening books.
     books:
       white:                              # List of names of books to use as white.
         - "cubail"
@@ -27,10 +27,10 @@ engine:                                   # Engine settings.
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
     lichess_cloud:
       enabled: true                       # Activate online moves from Lichess cloud eval.
-      min_eval_depth: 50                  # Minimum evaluation depth.
+      min_eval_depth: 60                  # Minimum evaluation depth.
       min_time: 10                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
-#     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
+      max_depth: 16                       # Half move max depth. (Comment this line for max depth)
     online_egtb:
       enabled: true                       # Activate online endgame tablebases from Lichess.
       min_time: 10                        # Time the bot must have at least to use the online move.
