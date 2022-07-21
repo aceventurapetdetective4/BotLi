@@ -8,7 +8,6 @@ engine:                                   # Engine settings.
     enabled: true                        # Activate opening books.
     books:
       white:                              # List of names of books to use as white.
-        - "Drawkiller_EloZoom_big"
         - "sf"
         - "cubail"
       black:                              # List of names of books to use as black.
