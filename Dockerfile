@@ -12,7 +12,7 @@ RUN wget -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gec
 RUN 7zr e cubail.7z && rm cubail.7z
 
 RUN wget --no-check-certificate "https://tests.stockfishchess.org/api/nn/nn-ad9b42354671.nnue" -O nn-ad9b42354671.nnue
-RUN mv nn-nn-ad9b42354671.nnue.nnue engines/nn-nn-ad9b42354671.nnue.nnue
+RUN mv nn-ad9b42354671.nnue engines/nn-ad9b42354671.nnue
 
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
