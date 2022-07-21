@@ -8,6 +8,7 @@ engine:                                   # Engine settings.
     enabled: true                        # Activate opening books.
     books:
       white:                              # List of names of books to use as white.
+        - "Drawkiller_EloZoom_big.bin"
         - "sf"
         - "cubail"
       black:                              # List of names of books to use as black.
@@ -15,6 +16,7 @@ engine:                                   # Engine settings.
       standard:                           # List of names of books to use if there is no specific book for white, black or chess960.
         - "sf" 
         - "cubail"
+        - "Drawkiller_EloZoom_big.bin"
 #      chess960:                           # List of names of books to use for Chess960.
 #        - ""
     selection: "best_move"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
