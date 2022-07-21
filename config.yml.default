@@ -8,10 +8,11 @@ engine:                                   # Engine settings.
     enabled: true                        # Activate opening books.
     books:
       white:                              # List of names of books to use as white.
+        - "Drawkiller_EloZoom_big"
         - "sf"
         - "cubail"
       black:                              # List of names of books to use as black.
-        - "Drawkiller_EloZoom_big"
+        - "cubail" 
       standard:                           # List of names of books to use if there is no specific book for white, black or chess960.
         - "sf" 
         - "cubail"
@@ -48,7 +49,7 @@ engine:                                   # Engine settings.
     score: -1000                          # If the score is less than or equal to this value, the bot resigns (in cp).
     consecutive_moves: 5                  # How many moves in a row the score has to be below the resign value.
   uci_options:                            # Arbitrary UCI options passed to the engine. (Commenting allowed)
-    Move Overhead: 100                    # Increase if your bot flags games too often.
+    Move Overhead: 90                     # Increase if your bot flags games too often.
     Ponder: true
     Threads: 8                            # Max CPU threads the engine can use.
     Hash: 256                             # Max memory (in megabytes) the engine can allocate.
