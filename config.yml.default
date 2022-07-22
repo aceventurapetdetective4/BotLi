@@ -54,6 +54,7 @@ engine:                                   # Engine settings.
     Hash: 256                             # Max memory (in megabytes) the engine can allocate.
     Skill Level: 20
     Use NNUE: true
+    EvalFile: "nn-ad9b42354671.nnue"
     UCI_Elo: 2850
     Slow Mover: 75
 #   SyzygyPath: "./3-4-5"         # Path to your local syzygy endgame tablebases
